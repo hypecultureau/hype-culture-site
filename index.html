@@ -5,28 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow">
   <title>Hype Culture</title>
-  https://fonts.googleapis.com/css2?family=Anton&family=Orbitron&display=swap
+
+  <!-- Stylish Fonts -->
+  https://fonts.googleapis.com/css2?family=Anton&family=Orbitron&family=Bebas+Neue&family=Monoton&display=swap
+
   <style>
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
-      background: #fff;
-      color: #111;
+      background: #0f0f0f;
+      color: #fff;
     }
 
     header {
       background-color: #000;
       color: #fff;
-      padding: 1em;
+      padding: 1em 2em;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 2px solid #ff00c8;
     }
 
     header h1 {
       margin: 0;
-      font-family: 'Anton', sans-serif;
-      font-size: 2em;
+      font-family: 'Monoton', cursive;
+      font-size: 3em;
+      color: #ff00c8;
     }
 
     nav a {
@@ -34,6 +39,13 @@
       margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.2em;
+    }
+
+    nav a:hover {
+      color: #00eaff;
     }
 
     section {
@@ -44,22 +56,36 @@
       background-image: url("background/labubu-bg.png");
       background-size: cover;
       background-position: center;
-      color: white;
+      color: #fff;
       text-align: center;
-      padding: 5em 2em;
+      padding: 6em 2em;
+      border-bottom: 2px solid #00eaff;
     }
 
     .hero h2 {
-      font-size: 2em;
+      font-family: 'Anton', sans-serif;
+      font-size: 2.5em;
       margin: 0;
+      text-shadow: 2px 2px #000;
+    }
+
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2em;
+      color: #00eaff;
     }
 
     .form-section {
-      background-color: #f8f8f8;
+      background-color: #1a1a1a;
       padding: 2em;
-      border-radius: 8px;
+      border-radius: 12px;
       max-width: 700px;
       margin: 2em auto;
+      box-shadow: 0 0 20px #ff00c8;
+    }
+
+    .form-section h2 {
+      color: #00eaff;
     }
 
     .form-section form {
@@ -70,14 +96,44 @@
     .form-section label {
       margin: 1em 0 0.5em;
       font-weight: bold;
+      color: #ff00c8;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1em;
     }
 
     .form-section input,
     .form-section select,
     .form-section textarea {
-      padding: 0.5em;
+      padding: 0.7em;
       border-radius: 5px;
-      border: 1px solid #ccc;
+      border: none;
+      background: #2a2a2a;
+      color: #fff;
+      font-size: 1em;
+    }
+
+    .form-section input:focus,
+    .form-section select:focus,
+    .form-section textarea:focus {
+      outline: 2px solid #00eaff;
+    }
+
+    .form-section button {
+      margin-top: 1.5em;
+      padding: 1em;
+      background: #ff00c8;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .form-section button:hover {
+      background: #00eaff;
     }
 
     footer {
@@ -86,6 +142,15 @@
       text-align: center;
       padding: 1em;
       margin-top: 2em;
+      border-top: 2px solid #ff00c8;
+    }
+
+    a {
+      color: #00eaff;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -110,7 +175,7 @@
 
   <section id="shop">
     <h2>Shop</h2>
-    <p>Our online shop is currently under development (please visit our private group on Facebook for any Buy/Sell/Trade enquiries: https://www.facebook.com/groups/136560191232738/). Meanwhile, we're building hype around our brand — and giving you the chance to win some exclusive items by entering our Lucky Draw below! :)</p>
+    <p>Our online shop is currently under development (please visit our private group on Facebook for any Buy/Sell/Trade enquiries: <atps://www.facebook.com/groups/136560191232738/). Meanwhile, we're building hype around our brand — and giving you the chance to win some exclusive items by entering our Lucky Draw below! :)</p>
   </section>
 
   <section class="form-section">
@@ -134,7 +199,7 @@
       <textarea id="reason" name="reason" rows="4" maxlength="300" required></textarea>
 
       <label for="email">4. Email address</label>
-      <p style="font-size: 0.9em; color: #444;">We are not allowed to collect more than 1 contact info due to the tight Privacy Act and regulation in Australia. Please check your email for winning results. Results will be published on 25th July 2025 before 11PM AEDT. Cut off time for answers to be submitted is 9PM AEDT on 25th July 2025.</p>
+      <p style="font-size: 0.9em; color: #ccc;">We are not allowed to collect more than 1 contact info due to the tight Privacy Act and regulation in Australia. Please check your email for winning results. Results will be published on 25th July 2025 before 11PM AEDT. Cut off time for answers to be submitted is 9PM AEDT on 25th July 2025.</p>
       <input type="email" id="email" name="email" required />
 
       <label for="name">5. Full name</label>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>Hype Culture</title>
+  https://fonts.googleapis.com/css2?family=Anton&family=Orbitron&display=swap
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #fff;
+      color: #111;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Anton', sans-serif;
+      font-size: 2em;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    .hero {
+      background-image: url("background/labubu-bg.png");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 5em 2em;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    .form-section {
+      background-color: #f8f8f8;
+      padding: 2em;
+      border-radius: 8px;
+      max-width: 700px;
+      margin: 2em auto;
+    }
+
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-section label {
+      margin: 1em 0 0.5em;
+      font-weight: bold;
+    }
+
+    .form-section input,
+    .form-section select,
+    .form-section textarea {
+      padding: 0.5em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hype Culture</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#shop">Shop</a>
+      <a href="#help">Help</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>The home of LABUBU, YEEZY, CRYBABY and chaos</h2>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Hype Shark, also known as PMFC (Pop Mart Fan Club) on Facebook Group/Marketplace, started from a garage with nothing but passion, a few boxes of plush toys and collectibles, and a dream. Over time, we grew into a warehouse full of sought-after collectibles — from Labubu plush toys to Cry Baby figurines and rare sneakers. If it's trending, we probably have it.</p>
+  </section>
+
+  <section id="shop">
+    <h2>Shop</h2>
+    <p>Our online shop is currently under development (please visit our private group on Facebook for any Buy/Sell/Trade enquiries: https://www.facebook.com/groups/136560191232738/). Meanwhile, we're building hype around our brand — and giving you the chance to win some exclusive items by entering our Lucky Draw below! :)</p>
+  </section>
+
+  <section class="form-section">
+    <h2>Lucky Draw: Win a Hype item of your choice!</h2>
+    <p>Answer all questions and win 1 hype item mailed to your doorstep!</p>
+    <form>
+      <label for="item">1. What is your hype item?</label>
+      <select id="item" name="item" required>
+        <option value="">--Select--</option>
+        <option value="SKULLPANDA">SKULLPANDA</option>
+        <option value="Yeezy">Yeezy</option>
+        <option value="CRYBABY">CRYBABY</option>
+        <option value="PUCKY">PUCKY</option>
+        <option value="LABUBU">LABUBU</option>
+      </select>
+
+      <label for="color">2. What is your favourite colour?</label>
+      <input type="text" id="color" name="color" required />
+
+      <label for="reason">3. In less than 50 words tell us why do you want the item above</label>
+      <textarea id="reason" name="reason" rows="4" maxlength="300" required></textarea>
+
+      <label for="email">4. Email address</label>
+      <p style="font-size: 0.9em; color: #444;">We are not allowed to collect more than 1 contact info due to the tight Privacy Act and regulation in Australia. Please check your email for winning results. Results will be published on 25th July 2025 before 11PM AEDT. Cut off time for answers to be submitted is 9PM AEDT on 25th July 2025.</p>
+      <input type="email" id="email" name="email" required />
+
+      <label for="name">5. Full name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="address">6. Mailing address</label>
+      <input type="text" id="address" name="address" required />
+
+      <p><strong>Total of 10 hype items will be given out!</strong></p>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="help">
+    <h2>Help</h2>
+    <p>For any business or general enquiries, please email <a href="mailto:enquiries@hypeculture.com.au">enquiries@hypeculture.com.au</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hype Culture. All rights reserved.</p>
+  </footer>
+</body>
+</html>

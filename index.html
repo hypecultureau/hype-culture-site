@@ -6,13 +6,10 @@
   <meta name="robots" content="noindex, nofollow">
   <title>Hype Culture</title>
 
-  <!-- Stylish Fonts -->
-  https://fonts.googleapis.com/css2?family=Anton&family=Orbitron&family=Bebas+Neue&family=Monoton&display=swap
-
   <style>
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
+      font-family: sans-serif;
       background: #0f0f0f;
       color: #fff;
     }
@@ -25,24 +22,28 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 2px solid #ff00c8;
+      flex-wrap: wrap;
     }
 
     header h1 {
-      margin: 0;
-      font-family: 'Monoton', cursive;
-      font-size: 3em;
-      color: #fff;
+           font-size: 2.5em;
       font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.5em;
     }
 
     nav a {
       color: #fff;
-      margin-left: 20px;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
 
     nav a:hover {
@@ -58,7 +59,7 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-color: #111; /* fallback */
+      background-color: #111;
       color: #fff;
       text-align: center;
       padding: 6em 2em;
@@ -66,17 +67,14 @@
     }
 
     .hero h2 {
-      font-family: 'Anton', sans-serif;
-      font-size: 2.5em;
+      font-size: 2em;
       margin: 0;
       text-shadow: 2px 2px #000;
-      color: #fff;
       font-weight: bold;
     }
 
     h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2em;
+      font-size: 1.8em;
       color: #00eaff;
     }
 
@@ -89,10 +87,6 @@
       box-shadow: 0 0 20px #ff00c8;
     }
 
-    .form-section h2 {
-      color: #00eaff;
-    }
-
     .form-section form {
       display: flex;
       flex-direction: column;
@@ -102,8 +96,7 @@
       margin: 1em 0 0.5em;
       font-weight: bold;
       color: #ff00c8;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.1em;
+      font-size: 1em;
     }
 
     .form-section input,
@@ -133,7 +126,6 @@
       font-size: 1.1em;
       cursor: pointer;
       transition: background 0.3s;
-      font-family: 'Anton', sans-serif;
       letter-spacing: 1px;
     }
 
@@ -165,8 +157,8 @@
         text-align: center;
       }
 
-      nav a {
-        margin: 10px 0;
+      nav {
+        margin-top: 1em;
       }
 
       .hero {
@@ -175,11 +167,26 @@
       }
 
       .hero h2 {
-        font-size: 1.8em;
+        font-size: 1.5em;
       }
 
       header h1 {
-        font-size: 2.2em;
+        font-size: 2em;
+      }
+
+      .form-section {
+        padding: 1.5em;
+        margin: 1em;
+      }
+
+      .form-section input,
+      .form-section select,
+      .form-section textarea {
+        font-size: 1em;
+      }
+
+      .form-section button {
+        font-size: 1em;
       }
     }
   </style>
@@ -205,7 +212,7 @@
 
   <section id="shop">
     <h2>Shop</h2>
-    <p>Our online shop is currently under development (please visit our private group on Facebook for any Buy/Sell/Trade enquiries: <a href="https://www.facebook.com/groups1232738/). Meanwhile, we're building hype around our brand — and giving you the chance to win some exclusive items by entering our Lucky Draw below! :)</p>
+    <p>Our online shop is currently under development. Please visit our private group on Facebook for any Buy/Sell/Trade enquiries: https://www.facebook.com/groups/1232738/. Meanwhile, we're building hype around our brand — and giving you the chance to win some exclusive items by entering our Lucky Draw below! :)</p>
   </section>
 
   <section class="form-section">
@@ -225,7 +232,7 @@
       <label for="color">2. What is your favourite colour?</label>
       <input type="text" id="color" name="color" required />
 
-      <label for="reason">3. In less than 50 words tell us why do you want the item above</label>
+      <label for="reason">3. In less than 50 words tell us why you want the item above</label>
       <textarea id="reason" name="reason" rows="4" maxlength="300" required></textarea>
 
       <label for="email">4. Email address</label>
@@ -239,5 +246,12 @@
       <input type="text" id="address" name="address" required />
 
       <p><strong>Total of 10 hype items will be given out!</strong></p>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
-     
+  <footer>
+    <p>&copy; 2025 Hype Culture. All rights reserved.</p>
+  </footer>
+</body>
+</html>

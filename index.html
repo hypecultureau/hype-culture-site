@@ -17,7 +17,8 @@
       color: #fff;
     }
 
-    header      background-color: #000;
+    header {
+      background-color: #000;
       color: #fff;
       padding: 1em 2em;
       display: flex;
@@ -56,6 +57,8 @@
       background-image: url("background/labubu-bg.png");
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
+      background-color: #111; /* fallback */
       color: #fff;
       text-align: center;
       padding: 6em 2em;
@@ -154,6 +157,31 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* Responsive Fixes */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+
+      .hero {
+        padding: 4em 1em;
+        background-size: contain;
+      }
+
+      .hero h2 {
+        font-size: 1.8em;
+      }
+
+      header h1 {
+        font-size: 2.2em;
+      }
+    }
   </style>
 </head>
 <body>
@@ -177,7 +205,7 @@
 
   <section id="shop">
     <h2>Shop</h2>
-    <p>Our online shop is currently under development (please visit our private group on Facebook for any Buy/Sell/Trade enquiries: <atps://www.facebook.com/groups/136560191232738/). Meanwhile, we're building hype around our brand — and giving you the chance to win some exclusive items by entering our Lucky Draw below! :)</p>
+    <p>Our online shop is currently under development (please visit our private group on Facebook for any Buy/Sell/Trade enquiries: <a href="https://www.facebook.com/groups1232738/). Meanwhile, we're building hype around our brand — and giving you the chance to win some exclusive items by entering our Lucky Draw below! :)</p>
   </section>
 
   <section class="form-section">
@@ -212,17 +240,4 @@
 
       <p><strong>Total of 10 hype items will be given out!</strong></p>
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-  <section id="help">
-    <h2>Help</h2>
-    <p>For any business or general enquiries, please email <a href="mailto:enquiries@hypeculture.com.au">enquiries@hypeculture.com.au</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Hype Culture. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+     
